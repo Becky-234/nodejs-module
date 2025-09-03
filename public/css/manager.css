@@ -1,0 +1,48 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: lightblue;
+}
+
+.manager {
+    width: 420px;
+    background-color: white;
+    color: black; 
+    box-shadow: 5px 20px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 40px;
+    padding: 30px 40px;
+    margin: 50px 0 0 380px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 200;
+}
+
+label {
+    font-size: 20px;
+    text-align: justify;
+}
+
+input {
+   align-items: center; 
+   padding: 7px;
+   width: 90%;
+   border-radius: 5px;
+   box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.3);
+   border-style: none;
+}
+
+button {
+    padding: 10px;
+    width: 30%;
+    margin-left: 150px;
+    border-radius: 10px;
+    font-size: 20px;
+    border-style: none;
+}
+
+ 

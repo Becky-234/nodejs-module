@@ -1,0 +1,28 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "This is a Hello-world folder",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "Hello-world",
+    "project"
+  ],
+  "author": "Kirabo Rebecca",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10",
+    "pug": "^3.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^9.34.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "prettier": "^3.6.2",
+    "prettier-eslint": "^16.4.2"
+  }
+}

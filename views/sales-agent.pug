@@ -1,0 +1,25 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Sales Agent Sign Up
+  link(rel='stylesheet' href='/css/sales-agent.css')
+.sales-agent
+  h1 Sign Up Here!
+  form(action='salesagent' method='post')
+    label(for='name') Username
+    br
+    input#name(type='text' name='name')
+    br
+    br
+    label(for='email') Email
+    br
+    input#email(type='email' name='email')
+    br
+    br
+    label(for='password') Password
+    br
+    input#password(type='password' name='password')
+    br
+    br
+    button(type='submit') Sign Up

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock</title>
+    <link rel="stylesheet" href="/public/css/stock.css">
+</head>
+
+<body>
+    <header>
+        <div class="navContainer">
+            <nav class="navbar">
+                <a href="#intro">
+                    <h3 class="logo">MWF</h3>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="/sales-agent.html">Sales</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+            </nav>
+        </div>
+        <br><br><br>
+    </header>
+
+    <div class="stock">
+
+        <form id="addStock" action="/stock" method="post">
+
+            <h1>Record Stock Here!</h1>
+            <div class="half">
+                <label for="pdttype">Product Type</label><br>
+                <input type="text" id="pdttype" name="pdttype">
+                <br><br>
+
+                <label for="pdtname">Product Name</label><br>
+                <input type="text" id="pdtname" name="pdtname">
+                <br><br>
+
+                <label for="cprice">Cost Price</label><br>
+                <input type="number" id="cprice" name="cprice">
+                <br><br>
+
+                <label for="pdtprice">Product Price</label><br>
+                <input type="number" id="pdtprice" name="pdtprice">
+                <br><br>
+            </div>
+            <label for="pdtquantity">Quantity</label><br>
+            <input type="number" id="pdtquantity" name="pdtquantity">
+            <br><br>
+
+            <label for="quality">Quality</label><br>
+            <input type="text" id="quality" name="quality">
+            <br><br>
+
+            <label for="date">Date</label><br>
+            <input type="date" id="date" name="date">
+            <br><br>
+
+            <label for="supplier">Supplier Name</label><br>
+            <input type="text" id="supplier" name="supplier">
+            <br><br>
+
+            <div class="buttons">
+                <button type="submit">Save</button>
+                <button type="reset">Cancel</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

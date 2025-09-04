@@ -1,13 +1,16 @@
 const express = require('express');
 const router = express.Router();
 
+const UserModel = require('../models/userModel')
 //Getting the manager signup form
 router.get('/managersignup', (req, res) => {
     res.render('managersignup', {title: 'manager signup page'})
 });
 
 router.post('/managersignup', (req, res) => {
-     console.log(req.body);
+    const user = new UserModel(req.body);
+    console.log(req.body);
+    user.save()
     res.redirect('login');
 });
 

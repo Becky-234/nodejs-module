@@ -1,0 +1,77 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='/public/css/sales.css')
+  title Add Customer
+header
+  .navContainer
+    nav.navbar
+      h3.logo MWF
+      ul.nav-links
+        li
+          a(href='/dashboard.html') Dashboard
+        li
+          a(href='/sales.html') Sales
+        li
+          a(href='/stock.html') Stock
+        li
+          a(href='/contact.html') Contact
+.sales
+  form#addSale(action='/sales' method='post')
+    h2 Add Sale
+    label(for='fname') Name of Customer
+    br
+    input#fname(type='text' name='name')
+    br
+    br
+    label(for='tproduct') Type of Product
+    br
+    input#tproduct(type='text' name='tproduct')
+    br
+    br
+    label(for='nproduct') Name of Product
+    br
+    input#nproduct(type='text' name='nproduct')
+    br
+    br
+    label(for='quantity') Quantity
+    br
+    input#quantity(type='number' name='quantity')
+    br
+    br
+    label(for='price') Price
+    br
+    input#price(type='number' name='price')
+    br
+    br
+    label(for='payment') Select Payment Method
+    br
+    select#payment(name='payment' required='')
+      option(value='' disabled='' selected='') Select your role
+      option(value='bank') Bank
+      option(value='mobile money') Mobile Money
+      option(value='cheque') Cheque
+    br
+    br
+    label(for='date') Date
+    br
+    input#date(type='date' name='date')
+    br
+    br
+    label(for='agent') Sales Agent Name
+    br
+    input#agent(type='text' name='agent')
+    br
+    br
+    button.btn.btn-primary(type='submit') Save
+    button.btn.btn-danger(type='reset' style='margin-left: 70px;') Cancel
+// Footer
+footer
+  p
+    | &copy; 2025 Mayondo Wood &amp; Furniture Ltd. All rights reserved.
+    // Footer
+    footer
+      p
+        | &copy; 2025 Mayondo Wood &amp; Furniture Ltd. All rights reserved. |
+        a(href='login.html') System Login

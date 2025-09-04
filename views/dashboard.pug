@@ -1,0 +1,48 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Dashboard
+  link(rel='stylesheet' href='/public/css/dashboard.css')
+header
+  .navContainer
+    nav.navbar
+      h3.logo MWF
+      ul.nav-links
+        li
+          a(href='/dashboard.html') Dashboard
+        li
+          a(href='/sales.html') Sales
+        li
+          a(href='/stock.html') Stock
+        li
+          a(href='/contact.html') Contact
+// About Section
+section.about
+  h2 About Us
+  p
+    | At Mayondo Wood &amp; Furniture Ltd, we pride ourselves on delivering top-quality wood
+    | and finely crafted furniture for both residential and commercial spaces.
+    | With years of experience, we combine craftsmanship with modern design to create
+    | durable and elegant solutions for our clients.
+// Products Section
+section.products
+  h2 Our Products
+  .products-grid
+    .product-card
+      img(src='https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=800&q=80' alt='Wood')
+      h3 Premium Wood
+      p High-quality timber for all your construction and carpentry needs.
+    .product-card
+      img(src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80' alt='Furniture')
+      h3 Elegant Furniture
+      p Beautiful and durable furniture pieces crafted to perfection.
+    .product-card
+      img(src='https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80' alt='Office Furniture')
+      h3 Office Solutions
+      p Stylish and ergonomic furniture designed for modern workspaces.
+// Footer
+footer
+  p
+    | &copy; 2025 Mayondo Wood &amp; Furniture Ltd. All rights reserved. |
+    a(href='login.html') System Login

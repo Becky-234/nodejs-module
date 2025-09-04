@@ -1,26 +1,22 @@
-doctype html
+ doctype html
 head
   meta(charset='UTF-8')
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
   title Stock
-  link(rel='stylesheet' href='/css/stock.css')
+  link(rel='stylesheet' href='/public/css/stock.css')
 header
   .navContainer
     nav.navbar
-      a(href='#intro')
-        h3.logo Becky
+      h3.logo MWF
       ul.nav-links
         li
-          a(href='#about') About 
+          a(href='/dashboard.html') Dashboard
         li
-          a(href='#skills') Skills
+          a(href='/sales.html') Sales
         li
-          a(href='#projects') Projects
+          a(href='/stock.html') Stock
         li
-          a(href='#contact') Contact
-  br
-  br
-  br
+          a(href='/contact.html') Contact
 .stock
   form#addStock(action='/stock' method='post')
     h1 Record Stock Here!
@@ -68,3 +64,8 @@ header
     .buttons
       button(type='submit') Save
       button(type='reset') Cancel
+// Footer
+footer
+  p
+    | &copy; 2025 Mayondo Wood &amp; Furniture Ltd. All rights reserved. |
+    a(href='login.html') System Login

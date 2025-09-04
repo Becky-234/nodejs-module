@@ -3,22 +3,20 @@ head
   meta(charset='UTF-8')
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
   title Stock
-  link(rel='stylesheet' href='/css/stock.css')
+  link(rel='stylesheet' href='css/stock.css')
 header
-  .navContainer
-    nav.navbar
-      a(href='#intro')
-        h3.logo MWF
-      ul.nav-links
-        li
-          a(href='#about') Dashboard 
-        li
-          a(href='#skills') Sales
-        li
-          a(href='#projects') Projects
-        li
-          a(href='#contact') Contact
-  br
-  br
-  br
+.navContainer
+  nav.navbar
+    h3.logo MWF
+    ul.nav-links
+      li
+      a(href='/dashboard.html') Dashboard
+      li
+      a(href='/sales.html') Sales
+      li
+      a(href='/stock.html') Stock
+      li
+      a(href='/contact.html') Contact
+body 
+block content 
  

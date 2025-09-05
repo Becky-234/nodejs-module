@@ -2,12 +2,11 @@
         margin: 0;
         font-family: Arial, sans-serif;
         line-height: 1.6;
-        color: #333;
+        color: #fff;
     }
 
     header {
         background: linear-gradient(135deg, #4e73df, #1cc88a);
-        color: #fff;
         text-align: center;
         padding: 80px 20px;
     }
@@ -24,7 +23,7 @@
 
     .btn {
         background: #fff;
-        color: #333;
+        color: #000;
         padding: 12px 25px;
         border-radius: 25px;
         text-decoration: none;
@@ -44,10 +43,9 @@
     }
 
     footer {
-        background: #f4f4f4;
         text-align: center;
         padding: 20px;
         font-size: 0.9rem;
-        color: #555;
+         
     }
  
